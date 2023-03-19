@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume: kopatsis.com</title>
+    <link rel="icon" href="kopatsicon.png">
+</head>
+<body class="bod">
+    <div class="head-contain">
+        <ul class="header embold">
+            <a class="navigate" id="home" href = "index.html">Home</a>
+            <a class="navigate" id="projects" href = "projects.html">Projects</a>
+            <a class="navigate" id="resume" href = "resume.html">Resume</a>
+            <a class="navigate" id="github" href="https://github.com/kopatsis" target="_blank">GitHub</a>
+            <a class="navigate" id="linkedin" href="https://www.linkedin.com/in/demetrios-j-kopatsis/" target="_blank">LinkedIn</a>
+            <div class="navigate" id="mode">☽</div>
+        </ul>
+    </div>
+    <div class="page">
+        <div class="whole">
+            <div class="heading embold">Feel free to view/download my resume here:</div>
+            <iframe src="KopatsisResume.pdf" width="100%" height="660px"></iframe>
+        </div>
+    </div>
+</body>
+
+<style>
+    @font-face {
+        font-family: OpenSans;
+        src: url(OpenSans-VariableFont_wdth,wght.ttf);
+    }
+    html {
+        height: 100%;
+    }
+    .bod{
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #0C0C0C;
+        background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+        font-family: OpenSans;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 900px;
+        max-width: 900px;
+        min-width: 350px;
+        text-align: center;
+        padding: 0px;
+    }
+    .head-contain{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .embold{
+        font-weight: bold;
+    }
+    .normal{
+        font-size: 18px;
+    }
+    .heading{
+        font-size: 28px;
+        margin-bottom: 0.6em;
+    }
+    iframe{
+        margin-bottom: 16px;
+
+    }
+    #mode{
+        font-size: 24px;
+        font-weight: bold;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+
+    .whole{
+        width: 800px;
+        max-width: 800px;
+        min-width: 350px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        color: #0C0C0C;
+        padding: 25px;
+        border-radius: 6px;
+        position: relative;
+    }
+    .page{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .navigate{
+        text-decoration: none;
+        color: #0C0C0C;
+        padding: 4px;
+        font-size: 20px;
+        padding-right: 8px;
+    }
+    .hover{
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .hoverblack{
+        border-radius: 4px;
+        box-shadow: 0px 0px 5px #fff;
+    }
+
+</style>
+
+<script>
+    const navbar = document.querySelectorAll('.navigate');
+    navbar.forEach(bar => bar.addEventListener('mouseover', function hoverdisp(event){
+        if (modeToggle.classList.contains('black')){
+            bar.classList.add('hoverblack');
+        }else{
+            bar.classList.add('hover');
+        }
+    }));
+    navbar.forEach(bar => bar.addEventListener('mouseleave', function hoverdisp(event){
+        if (modeToggle.classList.contains('black')){
+            bar.classList.remove('hoverblack');
+        }else{
+            bar.classList.remove('hover');
+            bar.classList.remove('hoverblack');
+        }
+    }));
+
+    const modeToggle = document.getElementById('mode');
+    const whole = document.querySelector('.whole');
+    const hover = document.querySelector('.hover');
+    const body = document.querySelector('.bod');
+    modeToggle.addEventListener("click", function toggle(event){
+        if (modeToggle.classList.contains('black')){
+            whole.style.color = "#0C0C0C";
+            whole.style.background = "white";
+            whole.style.boxShadow = "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px";
+            navbar.forEach(bar => bar.style.color = "#0C0C0C");
+            modeToggle.textContent = "☽";
+            modeToggle.style.paddingRight = "10px";
+            modeToggle.classList.remove('black');
+            modeToggle.classList.add('hover');
+            body.style.color = "#0C0C0C";
+            body.style.background = 'radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%)';
+            localStorage.setItem('darkmode',"1")  
+        } else {
+            whole.style.color = "aliceblue";
+            whole.style.background = "#161617";
+            whole.style.boxShadow = "aliceblue 0px 1px 2px 0px, aliceblue 0px 2px 6px 2px";
+            navbar.forEach(bar => bar.style.color = "aliceblue");
+            modeToggle.textContent = "☀";
+            modeToggle.style.paddingRight = "6px";
+            modeToggle.classList.add('black');
+            modeToggle.classList.add('hoverblack');
+            body.style.color = "aliceblue";
+            body.style.background = 'linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(36, 36, 36) 78.9%)';
+            localStorage.setItem('darkmode',"0")       
+        }
+    });
+
+    if(localStorage.getItem('darkmode') == "0"){
+        modeToggle.click();
+        modeToggle.classList.remove('hoverblack');
+
+    }
+
+    const heading = document.querySelector('.heading');
+    window.addEventListener('resize', function adjustSize(){
+        if (window.innerWidth <= '425'){
+            heading.style.fontSize = '22px';
+            navbar.forEach(bar => bar.style.fontSize = '16px');
+            navbar.forEach(bar => bar.style.padding = '3px');
+            navbar.forEach(bar => bar.style.paddingRight = '6px');
+
+        } else if (window.innerWidth <= '500'){
+            heading.style.fontSize = '24px';
+            navbar.forEach(bar => bar.style.fontSize = '18px');
+            navbar.forEach(bar => bar.style.padding = '4px');
+            navbar.forEach(bar => bar.style.paddingRight = '8px');
+        
+        } else{
+            heading.style.fontSize = '28px';
+            navbar.forEach(bar => bar.style.fontSize = '20px');
+            navbar.forEach(bar => bar.style.padding = '4px');
+            navbar.forEach(bar => bar.style.paddingRight = '8px');
+        }
+    })
+
+    if (window.innerWidth <= '425'){
+            heading.style.fontSize = '22px';
+            navbar.forEach(bar => bar.style.fontSize = '16px');
+            navbar.forEach(bar => bar.style.padding = '3px');
+            navbar.forEach(bar => bar.style.paddingRight = '6px');
+
+    }
+    if (window.innerWidth <= '500'){
+            heading.style.fontSize = '24px';
+            navbar.forEach(bar => bar.style.fontSize = '18px');
+            navbar.forEach(bar => bar.style.padding = '4px');
+            navbar.forEach(bar => bar.style.paddingRight = '8px');
+        
+    }
+</script>
+
+</html>

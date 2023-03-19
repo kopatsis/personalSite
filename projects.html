@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects: kopatsis.com</title>
+    <link rel="icon" href="kopatsicon.png">
+</head>
+<body class="bod">
+    <div class="head-contain">
+        <ul class="header embold">
+            <a class="navigate" id="home" href = "index.html">Home</a>
+            <a class="navigate" id="projects" href = "projects.html">Projects</a>
+            <a class="navigate" id="resume" href = "resume.html">Resume</a>
+            <a class="navigate" id="github" href="https://github.com/kopatsis" target="_blank">GitHub</a>
+            <a class="navigate" id="linkedin" href="https://www.linkedin.com/in/demetrios-j-kopatsis/" target="_blank">LinkedIn</a>
+            <div class="navigate white" id="mode">☽</div>
+        </ul>
+    </div>
+    <div class="page">
+        <div class="whole normal">
+            <div class="general title embold">Here are a few of the projects I have made so far</div>
+            <br>
+
+            <div class="proj title embold">Calculator Application:</div>
+            <div class="proj section">
+                <div class="proj picture">
+                    <a href = "calculator.html" target="_blank"><img class="picture" src="calculator.png" alt="calculator"></a>
+                </div>
+                <div class="proj expl">This is a calculator I made to demonstrate basic to intermediate Javascript skills. This calculator
+                    can be used via input from the keyboard or clicking on the buttons and offers normal arithmetic operations plus percentages and factorials. 
+                    The calculator also has reset and backspace functions and the design showcases CSS styling, including FlexBox.
+                </div>
+            </div>
+            <div class="proj links">The code for this project can be seen on GitHub  <a class="link" href="https://github.com/kopatsis/OdinProjectCalculator" target="_blank">here</a></div>
+            <div class="proj symbexp">Click the icon above to open a new tab with this project's page</div>
+            <br>
+
+            <div class="proj title embold">War Card Game:</div>
+            <div class="proj section">
+                <div class="proj picture">
+                    <a href = "https://github.com/kopatsis/Week6FinalProject" target="_blank"><img class="picture" src="poker.png" alt="poker"></a>
+                </div>
+                <div class="proj expl">Using Java, I created a simulation of the card game 'War' which utilizes the four object-oriented programming
+                    principles of abstraction, encapsulation, polymorphism, and inheritance. This game can be played with a modified rule set according
+                    to Promineo Tech's guidelines with War.java or the traditional (harder to simulate) rule set on WarTwoPointO.java.
+                </div>
+            </div>
+            <div class="proj links">The code for this project can be seen on GitHub  <a class="link" href="https://github.com/kopatsis/Week6FinalProject" target="_blank">here</a> or by clicking the icon above</div>
+            <br>
+
+            <div class="proj title embold">Jeep Sales Spring Boot Application:</div>
+            <div class="proj section">
+                <div class="proj picture">
+                    <a href = "https://github.com/kopatsis/JeepSalesSpring target="_blank"><img class="picture" src="jeep.png" alt="poker"></a>
+                </div>
+                <div class="proj expl">This is a standalone application using the Java-based framework of Spring Boot. With these tools, I created a backend system
+                    for a hypothetical Jeep model SQL database that can be accessed by outside users via browser. The application ensures no malicious or problematic data is 
+                    able to affect the Jeep database.
+                </div>
+            </div>
+            <div class="proj links">The code for this project can be seen on GitHub  <a class="link" href="https://github.com/kopatsis/JeepSalesSpring" target="_blank">here</a> or by clicking the icon above</div>
+            <br>
+
+            <div class="small classexplain">Please note most projects done from my courses at Oregon State are not publicly available due to 
+                plagiarism guidelines 
+            </div>
+            <div class="small attribution">All icons sourced with permission from <a href="https://www.flaticon.com/" class="link" target="_blank" title="Flaticon">Flaticon</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    @font-face {
+        font-family: OpenSans;
+        src: url(OpenSans-VariableFont_wdth,wght.ttf);
+    }
+    html {
+        height: 100%;
+    }
+    .bod{
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #0C0C0C;
+        background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+        font-family: OpenSans;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 900px;
+        max-width: 900px;
+        min-width: 350px;
+        text-align: center;
+        padding: 0px;
+    }
+    .head-contain{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .embold{
+        font-weight: bold;
+    }
+    .normal{
+        font-size: 18px;
+    }
+
+
+    .small{
+        font-size: 14px;
+    }
+
+    .picture{
+        max-width: 110px;
+        margin-right: 6px;
+    }
+    img{
+        max-width: 110px;
+        cursor: pointer;
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
+    }
+    .general{
+        font-size: 32px;
+        margin-top: 0.25em;
+    }
+    .proj{
+        padding: 3px;
+    }
+    .link{
+        color: #0C0C0C;
+    }
+
+
+    .whole{
+        width: 800px;
+        max-width: 800px;
+        min-width: 350px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        color: #0C0C0C;
+        padding: 25px;
+        border-radius: 6px;
+        position: relative;
+    }
+    .page{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .navigate{
+        text-decoration: none;
+        color: #0C0C0C;
+        font-size: 20px;
+        padding: 4px;
+        padding-right: 8px;
+    }
+
+    .hover{
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .hoverblack{
+        border-radius: 4px;
+        box-shadow: 0px 0px 5px #fff;
+    }
+    #mode{
+        font-size: 24px;
+        font-weight: bold;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+
+</style>
+
+<script>
+    const navbar = document.querySelectorAll('.navigate');
+    navbar.forEach(bar => bar.addEventListener('mouseover', function hoverdisp(event){
+        if (modeToggle.classList.contains('black')){
+            bar.classList.add('hoverblack');
+        }else{
+            bar.classList.add('hover');
+        }
+    }));
+    navbar.forEach(bar => bar.addEventListener('mouseleave', function hoverdisp(event){
+        if (modeToggle.classList.contains('black')){
+            bar.classList.remove('hoverblack');
+        }else{
+            bar.classList.remove('hover');
+            bar.classList.remove('hoverblack');
+        }
+    }));
+
+    const modeToggle = document.getElementById('mode');
+    const whole = document.querySelector('.whole');
+    const hover = document.querySelector('.hover');
+    const body = document.querySelector('.bod');
+    const links = document.querySelectorAll('.link');
+    modeToggle.addEventListener("click", function toggle(event){
+        if (modeToggle.classList.contains('black')){
+            whole.style.color = "#0C0C0C";
+            whole.style.background = "white";
+            whole.style.boxShadow = "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px";
+            navbar.forEach(bar => bar.style.color = "#0C0C0C");
+            modeToggle.textContent = "☽";
+            modeToggle.style.paddingRight = "10px";
+            modeToggle.classList.remove('black');
+            modeToggle.classList.add('hover');
+            body.style.color = "#0C0C0C";
+            body.style.background = 'radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%)';
+            links.forEach(link => link.style.color = "#0C0C0C");
+            localStorage.setItem('darkmode',"1")  
+        } else {
+            whole.style.color = "aliceblue";
+            whole.style.background = "#161617";
+            whole.style.boxShadow = "aliceblue 0px 1px 2px 0px, aliceblue 0px 2px 6px 2px";
+            navbar.forEach(bar => bar.style.color = "aliceblue");
+            modeToggle.textContent = "☀";
+            modeToggle.style.paddingRight = "6px";
+            modeToggle.classList.add('black');
+            modeToggle.classList.add('hoverblack');
+            body.style.color = "aliceblue";
+            body.style.background = 'linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(36, 36, 36) 78.9%)';
+            links.forEach(link => link.style.color = "aliceblue");  
+            localStorage.setItem('darkmode',"0")       
+        }
+    });
+
+    if(localStorage.getItem('darkmode') == "0"){
+        modeToggle.click();
+        modeToggle.classList.remove('hoverblack');
+    }
+
+    const normals = document.querySelectorAll('.normal'); 
+    const pictures = document.querySelectorAll('.picture');
+    const smalls = document.querySelectorAll('.small');
+    window.addEventListener('resize', function adjustSize(){
+        if (window.innerWidth <= '425'){
+            normals.forEach(normal => normal.style.fontSize = '14px');
+            navbar.forEach(bar => bar.style.fontSize = '16px');
+            navbar.forEach(bar => bar.style.padding = '3px');
+            navbar.forEach(bar => bar.style.paddingRight = '6px');
+            pictures.forEach(part => part.style.maxWidth = '90px');
+            smalls.forEach(small => small.style.fontSize = '11px');
+
+        } else if (window.innerWidth <= '500'){
+            normals.forEach(normal => normal.style.fontSize = '16px');
+            navbar.forEach(bar => bar.style.fontSize = '18px');
+            navbar.forEach(bar => bar.style.padding = '4px');
+            navbar.forEach(bar => bar.style.paddingRight = '8px');
+            pictures.forEach(part => part.style.maxWidth = '100px');
+            smalls.forEach(small => small.style.fontSize = '12px');
+        
+        } else{
+            normals.forEach(normal => normal.style.fontSize = '18px');
+            navbar.forEach(bar => bar.style.fontSize = '20px');
+            navbar.forEach(bar => bar.style.padding = '4px');
+            navbar.forEach(bar => bar.style.paddingRight = '8px');
+            pictures.forEach(part => part.style.maxWidth = '110px');
+            smalls.forEach(small => small.style.fontSize = '14px');
+        }
+    })
+
+    if (window.innerWidth <= '425'){
+            normals.forEach(normal => normal.style.fontSize = '14px');
+            navbar.forEach(bar => bar.style.fontSize = '16px');
+            navbar.forEach(bar => bar.style.padding = '3px');
+            navbar.forEach(bar => bar.style.paddingRight = '6px');
+            pictures.forEach(part => part.style.maxWidth = '90px');
+            smalls.forEach(small => small.style.fontSize = '11px');
+
+    }
+    if (window.innerWidth <= '500'){
+            normals.forEach(normal => normal.style.fontSize = '16px');
+            navbar.forEach(bar => bar.style.fontSize = '18px');
+            navbar.forEach(bar => bar.style.padding = '4px');
+            navbar.forEach(bar => bar.style.paddingRight = '8px');
+            pictures.forEach(part => part.style.maxWidth = '100px');
+            smalls.forEach(small => small.style.fontSize = '12px');
+        
+    }
+</script>
+
+</html>
